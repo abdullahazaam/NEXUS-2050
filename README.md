@@ -1,5 +1,7 @@
 # NEXUS 2050
 
+[![Quality checks](https://github.com/abdullahazaam/NEXUS-2050/actions/workflows/ci.yml/badge.svg)](https://github.com/abdullahazaam/NEXUS-2050/actions/workflows/ci.yml)
+
 ### Interactive Smart City Intelligence Platform
 
 **Intelligence for the Cities of Tomorrow.**
@@ -17,7 +19,7 @@ This is a frontend portfolio project, not an operational city management system.
 - Urban pulse with animated metrics and compact trend visualizations.
 - Command center with energy distribution, mobility and environmental trends, district comparison, alert timeline, and four deterministic time ranges.
 - Simulation lab with five accessible sliders, four animated presets, reset, six computed outcomes, and a responsive city-state illustration.
-- Interactive technology pipeline and a speculative 2030�2050 milestone narrative.
+- Interactive technology pipeline and a speculative 2030–2050 milestone narrative.
 
 ## Technology
 
@@ -42,14 +44,14 @@ The hero uses a native sticky viewport for a reversible, scroll-driven city fly-
 
 `src/lib/simulation.ts` contains the complete pure calculation model. All five controls range from 0 to 100. Results are recomputed locally without network requests.
 
-- Congestion = `clamp(25 + traffic � 0.85 - transport � 0.55)`.
-- Carbon output = `max(5, 40 + traffic � 0.8 + industry � 1.1 - renewable � 0.6 - transport � 0.25)`.
-- Air quality = `clamp(12 + carbon � 0.55 + congestion � 0.16, 5, 200)`.
-- Energy stability = `clamp(100 - industry � 0.22 - traffic � 0.1 + renewable � 0.09)`.
-- Response time = `max(1.2, 9 - readiness � 0.07 + congestion � 0.025)`.
+- Congestion = `clamp(25 + traffic × 0.85 − transport × 0.55)`.
+- Carbon output = `max(5, 40 + traffic × 0.8 + industry × 1.1 − renewable × 0.6 − transport × 0.25)`.
+- Air quality = `clamp(12 + carbon × 0.55 + congestion × 0.16, 5, 200)`.
+- Energy stability = `clamp(100 − industry × 0.22 − traffic × 0.1 + renewable × 0.09)`.
+- Response time = `max(1.2, 9 − readiness × 0.07 + congestion × 0.025)`.
 - Efficiency combines congestion, emissions, stability, readiness, and renewables with documented weights in the source.
 
-`clamp` defaults to 0�100. Outputs are rounded for presentation. These coefficients are illustrative design choices, not scientifically calibrated estimates. Carbon units and response times are explanatory demo quantities. The model does not predict an actual city's behavior.
+`clamp` defaults to 0–100. Outputs are rounded for presentation. These coefficients are illustrative design choices, not scientifically calibrated estimates. Carbon units and response times are explanatory demo quantities. The model does not predict an actual city's behavior.
 
 Presets: **Normal Day**, **Peak-Hour Pressure**, **Emergency Mode**, and **Sustainable Future**. Changes interpolate smoothly; direct keyboard or pointer input interrupts a preset transition immediately.
 
@@ -140,7 +142,7 @@ src/
 
 ## GitHub and deployment
 
-Set the eventual project repository URL in **`src/lib/config.ts`**. It currently points to the requested author profile: https://github.com/abdullahazaam.
+The source repository is available at [github.com/abdullahazaam/NEXUS-2050](https://github.com/abdullahazaam/NEXUS-2050).
 
 To deploy with Vercel after publishing your repository:
 
@@ -149,7 +151,7 @@ To deploy with Vercel after publishing your repository:
 3. Use `npm run build` and output directory `dist` (also configured in `vercel.json`).
 4. Deploy. No environment variables or backend services are needed.
 
-This is a single-page anchor-based experience, so no route rewrites are required. Nothing has been pushed or deployed automatically.
+This is a single-page anchor-based experience, so no route rewrites are required. Deployment is intentionally left for a future release.
 
 ## Screenshots and social metadata
 
@@ -172,6 +174,6 @@ Screenshot links are deliberately not embedded until the files exist. Set the ca
 
 ## Author and license
 
-**Abdullah Azam** � [GitHub](https://github.com/abdullahazaam)
+**Abdullah Azam** · [GitHub](https://github.com/abdullahazaam)
 
 Designed and developed by Abdullah Azam. Released under the [MIT License](LICENSE).
