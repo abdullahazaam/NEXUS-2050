@@ -2,6 +2,8 @@
 
 [![Quality checks](https://github.com/abdullahazaam/NEXUS-2050/actions/workflows/ci.yml/badge.svg)](https://github.com/abdullahazaam/NEXUS-2050/actions/workflows/ci.yml)
 
+**[Live Demo](https://nexus-2050.vercel.app) · [Source Code](https://github.com/abdullahazaam/NEXUS-2050)**
+
 ### Interactive Smart City Intelligence Platform
 
 **Intelligence for the Cities of Tomorrow.**
@@ -142,16 +144,15 @@ src/
 
 ## GitHub and deployment
 
-The source repository is available at [github.com/abdullahazaam/NEXUS-2050](https://github.com/abdullahazaam/NEXUS-2050).
+The project is live at [nexus-2050.vercel.app](https://nexus-2050.vercel.app), with source code at [github.com/abdullahazaam/NEXUS-2050](https://github.com/abdullahazaam/NEXUS-2050).
 
-To deploy with Vercel after publishing your repository:
+The production deployment uses Vercel:
 
-1. Import the repository into Vercel.
-2. Select the Vite framework preset and Node.js 22 or newer.
-3. Use `npm run build` and output directory `dist` (also configured in `vercel.json`).
-4. Deploy. No environment variables or backend services are needed.
+1. The Vite project builds with Node.js 22 or newer.
+2. Vercel runs `npm run build` and publishes `dist`, as configured in `vercel.json`.
+3. Pushes to the connected production branch trigger a new deployment.
 
-This is a single-page anchor-based experience, so no route rewrites are required. Deployment is intentionally left for a future release.
+This is a single-page anchor-based experience, so no route rewrites are required. No environment variables or backend services are needed.
 
 ## Screenshots and social metadata
 
@@ -162,7 +163,7 @@ See `public/screenshots/README.md` for capture guidelines and social-preview set
 - `nexus-simulation.png`
 - `nexus-mobile.png`
 
-Screenshot links are deliberately not embedded until the files exist. Set the canonical production URL and an absolute Open Graph image URL after deployment. The existing page title, description, theme color, favicon, and Open Graph text metadata work without an invented domain.
+Screenshot links are deliberately not embedded until the files exist. Add an absolute Open Graph image URL when a social preview is available. The page title, description, canonical URL, theme color, favicon, and Open Graph text metadata are configured for production.
 
 ## Future improvements
 
@@ -174,6 +175,6 @@ Screenshot links are deliberately not embedded until the files exist. Set the ca
 
 ## Author and license
 
-**Abdullah Azam** · [GitHub](https://github.com/abdullahazaam)
+**Abdullah Azam** · [GitHub](https://github.com/abdullahazaam/NEXUS-2050)
 
 Designed and developed by Abdullah Azam. Released under the [MIT License](LICENSE).
