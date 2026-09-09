@@ -8,7 +8,7 @@
 
 **Intelligence for the Cities of Tomorrow.**
 
-An original, responsive urban intelligence experience by **Abdullah Azam**. Explore a procedural 3D metropolis, inspect six connected city systems, and adjust a transparent simulation to understand how mobility, energy, industry, and emergency readiness influence each other.
+An original, responsive urban intelligence experience by **Abdullah Azaam**. Explore a procedural 3D metropolis, inspect six connected city systems, and adjust a transparent simulation to understand how mobility, energy, industry, and emergency readiness influence each other.
 
 This is a frontend portfolio project, not an operational city management system. Every city statistic, alert, comparison, and projection is **simulated demo data**. The clock alone uses the visitor's local system time.
 
@@ -175,6 +175,6 @@ Screenshot links are deliberately not embedded until the files exist. Add an abs
 
 ## Author and license
 
-**Abdullah Azam** · [GitHub](https://github.com/abdullahazaam/NEXUS-2050)
+**Abdullah Azaam** · [GitHub](https://github.com/abdullahazaam/NEXUS-2050)
 
-Designed and developed by Abdullah Azam. Released under the [MIT License](LICENSE).
+Designed and developed by Abdullah Azaam. Released under the [MIT License](LICENSE).
